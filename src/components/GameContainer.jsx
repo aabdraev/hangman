@@ -5,11 +5,9 @@ import Notifictation from './Notifictation'
 import Popup from './Popup'
 import Word from './Word'
 import { showNotification as show } from '../helpers/helpers'
+import { generate } from 'random-words'
 
-
-
-const words = ['application', 'programming', 'interface', 'wizard'];
-let selectedWord = words[Math.floor(Math.random() * words.length)];
+let selectedWord = generate({ minLength: 5, maxLength: 5 })
 
 const GameContainer = () => {
     const [playable, setPlayable] = useState(true)
@@ -48,8 +46,7 @@ const GameContainer = () => {
         setCorrectLetters([])
         setWrongLetters([])
 
-        const random = Math.floor(Math.random() * words.length)
-        selectedWord = words[random]
+        selectedWord = generate({ minLength: 5, maxLength: 5 })
     }
 
     return (
