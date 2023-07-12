@@ -5,15 +5,14 @@
 }
 
 body {
-  background-color: #454545;
+  background-color: #2D4356;
   color: #fff;
   font-family: monospace;
+  overflow: hidden;
 }
 
 #root {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }

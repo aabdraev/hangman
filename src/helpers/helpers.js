@@ -2,7 +2,7 @@ export const showNotification = (setter) => {
     setter(true)
     setTimeout(() => {
         setter(false)
-    }, 2000)
+    }, 1500)
 }
 
 export const checkWin = (correct, wrong, word) => {

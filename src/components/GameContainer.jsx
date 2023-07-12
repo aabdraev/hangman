@@ -58,12 +58,12 @@ const GameContainer = () => {
                 <Figure
                     wrongLetters={wrongLetters}
                 />
-                <WrongLetters
-                    wrongLetters={wrongLetters}
-                />
                 <Word
                     selectedWord={selectedWord}
                     correctLetters={correctLetters}
+                />
+                <WrongLetters
+                    wrongLetters={wrongLetters}
                 />
             </section>
             <Popup

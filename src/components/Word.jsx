@@ -2,7 +2,7 @@ import React from 'react'
 
 const Word = ({ selectedWord, correctLetters }) => {
     return (
-        <section className="word" id="word">
+        <section className="word">
             {selectedWord
                 .split('')
                 .map((letter, i) => {
